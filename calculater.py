@@ -2,28 +2,20 @@
 # halfway
 
 def plus(str1,str2,num2calc = {}):
-    str1 = float(str1)
-    str2 = float(str2)
     num2calc[str1,str2] = str1+str2
     return num2calc
 
 def minus(str1,str2,num2calc = {}):
-    str1 = float(str1)
-    str2 = float(str2)
     num2calc[str1,str2] = str1-str2
     return num2calc
 
 
 def multiple(str1,str2,num2calc = {}):
-    str1 = float(str1)
-    str2 = float(str2)
     num2calc[str1,str2] = str1*str2
     return num2calc
 
 
 def cut(str1,str2,num2calc = {}):
-    str1 = float(str1)
-    str2 = float(str2)
     num2calc[str1,str2] = str1/str2
     return num2calc
 
@@ -31,6 +23,8 @@ def cut(str1,str2,num2calc = {}):
 def main():
     first_number = input('-->')
     second_number = input('-->')
+    first_number = float(first_number)
+    second_number = float(second_number)
     #first_number and second_number is str
 
 
