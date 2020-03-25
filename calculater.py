@@ -1,5 +1,4 @@
 # calculate 2 numbers by function
-# halfway
 
 def plus(str1,str2,num2calc = {}):
     num2calc[str1,str2] = str1+str2
@@ -21,16 +20,22 @@ def divide(str1,str2,num2calc = {}):
 
 
 def main():
-    first_number = input('-->')
-    second_number = input('-->')
-    first_number = float(first_number)
-    second_number = float(second_number)
+    target_number = float(input('-->'))
+    cal_symbol = float(input('what kind of calculation do you want?')
+    calculation_number = float(input('-->'))
     
     
-    print(plus(first_number,second_number))
-    print(minus(first_number,second_number))
-    print(multiple(first_number,second_number))
-    print(divide(first_number,second_number))
+    if(cal_symbol=='+'):
+        print(plus(target_number,calculation_number))
+    elif(cal_symbol=='-'):
+        print(minus(target_number,calculation_number))
+    elif(cal_symbol=='-'):
+        print(multiple(target_number,calculation_number))
+    elif(cal_symbol=='-'):
+        print(divide(target_number,calculation_number))
+    else:
+        print('error!')
+                       
 
 
 if __name__ == '__main__':
